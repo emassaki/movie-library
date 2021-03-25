@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+body {
+  background-color: whitesmoke;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movie-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 15px 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie-card {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  max-width: 500px;
+  min-width: 350px;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.new-card-container {
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  width: 60%;
+  max-width: 500px;
+  min-width: 350px;
+  overflow: hidden;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.add-new-card > svg {
+  color: black;
+  font-size: 50px;
+}
+
+.movie-card-image {
+  width: 100%;
+}
+
+.movie-card-body {
+  flex: 1 1 auto;
+  padding: 20px;
+}
+
+.movie-card-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.movie-card-subtitle {
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.movie-card-storyline {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.movie-card-rating {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-card-rating p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.movie-details {
+  border: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 70%;
+  max-width: 680px;
+  margin: 10px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.movie-details img {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-data {
+  padding: 10px 30px;
+  line-height: 1.5;
 }
+
+.links {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.edit-movie, .new-movie {
+  width: 60%;
+  margin: 30px auto;
+  max-width: 680px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+input, select, textarea {
+  margin-top: 10px;
+  padding: 7px;
+}
+
+textarea {
+  height: 70px;
+}
+
+.submit-btn {
+  padding: 7px;
+  margin-top: 10px;
+}
+
+.not-found, .loading {
+  margin: 25% auto;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+.return {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
